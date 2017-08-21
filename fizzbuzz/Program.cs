@@ -23,7 +23,7 @@ namespace fizzbuzz
                     config.SmallNumber = GetIntValueFromUser("Please enter the first number", config.SmallNumber);
                     config.LargeNumber = GetIntValueFromUser("Please enter the second number", config.LargeNumber);
                     config.UpperBound = GetIntValueFromUser("Please enter upper bound", config.UpperBound);
-                    Console.WriteLine(fizzBuzzer.fizzBuzzer.Print(config));
+                    fizzBuzzer.fizzBuzzer.PrintToOutput(Console.Out,config);
                     configurationNotVerified = false;
                 }
                 catch (FizzBuzzerNonPositiveException)
